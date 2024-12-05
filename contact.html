@@ -11,7 +11,7 @@ $date = date('Y-m-d H:i:s');
 $query = "insert into contact (email,password,again,date) values
 ('$email','$password','$again','$date')";
 $result = mysqli_query($con,$query);
-header("Location:done.php");
+header("Location:done.html");
 die;
 }
 ?>
@@ -242,7 +242,7 @@ nav svg{
      Securely save your progre
   </h4>
 
-  <form action="contact.php" method="post">
+  <form action="contact.html" method="post">
     <input type="email" name="email"  placeholder="Email" required> <br>
 
     <input type="password" name="password"  placeholder="Password"> <br>
