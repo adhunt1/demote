@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,9 +16,11 @@
     }
 
       body{
-      
+      padding-bottom: 5vh;
       font-family:montserrat, arial, verdana;
       }
+
+
         
       .header-mobile{
           display: none;
@@ -28,7 +29,7 @@
        
    nav{
     height: 100px;
-    background-color: blanchedalmond;
+    background-color: #cabceb;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -66,12 +67,12 @@
       h2{
         text-align: center;
           
-              color: rgba(102, 102, 102,0.9);
+              color: darkred;
        }
 
       h4{
         text-align: center;
-        color: rgba(102, 102, 102,0.7);
+        color: black;
          
       }
      
@@ -97,8 +98,8 @@
        padding-bottom: 20px;
        text-align: center;
        justify-content: center;
-
       }
+
 
          footer{
    background-color: #ede7ea;
@@ -129,15 +130,11 @@
     flex-direction: column;
   }
 
-
-
   .resources-list a{
     margin:20px;
     text-decoration: none;
    color: black;
   }
-
-
 
   .trade-mark{
     margin-left: 90px;
@@ -164,13 +161,12 @@
                    font-family:montserrat, arial, verdana;
                   }
 
-
              .wrapper{
               width: 90%;
               margin: 0 auto;
               height: 95%;
-              border:2px solid darkred;
-
+              border:2px solid #cabceb;
+              border-radius: 5px;
              }
 
               .header-mobile{
@@ -179,29 +175,35 @@
           height: 25vh;
           width: 100%;
           justify-content: space-between;
-          background-color: blanchedalmond;
+          background-color: #cabceb;
           align-items: center;
           padding-left: 5%;
+          border-radius: 5px;
       }
                
-
            .header-pha-svg  svg{
                  height: 10%;
                  width: 10%;
                
            }
                  
-
-        
-         
            .hamburger-menu{
               width: 30%;
-              height: 30%;
+              height: 25%;
             }
 
            nav {
           display: none;
          }
+
+            h2{
+              color: darkred;
+            } 
+
+            h4{
+              color: black;
+            }
+
 
          .middle-section-container{
           display: flex;
@@ -209,7 +211,7 @@
           max-width: 100%;
           margin-right: auto;
           margin-left: auto;
-          
+          border-radius: 5px;
          }
 
 
@@ -225,25 +227,24 @@
                                     height: 500px;
                                      margin-top: 40px;
                                      margin-bottom: 40px;
-                                    }
-
-                                     
-                                
-                      .list-separator1 {
+                                     border-radius: 5px;
+                                   }
+                                    
+                              .list-separator1 {
                               display: flex;
                             flex-direction: row; 
                              width: 100%;
-                             border:1px solid blue; 
                              height: 40%;
                           }
+                            
                             
                       .list-separator2 {
                               display: flex;
                             flex-direction: row; 
                             height: 60%; 
                             width: 100%;
-                            border:1px solid blue;
                           }
+                            
                               
 
                             .resources-list1{
@@ -282,15 +283,13 @@
                       padding-bottom: 10px;
                      }
 
-        
-           
-           .footer-svg-container{
-            display: none;
-           }
+         .footer-svg-container{
+                        display: none;
+                        }
 
           .footer-svg{
-         display: none;
-          }
+                    display: none;
+                    }
 
         .mobile-footer-container{
           display: flex;
@@ -301,24 +300,17 @@
           justify-content: space-between;
           background-color: blanchedalmond;
           align-items: center;
-          border: 1px solid black;
-        }
+          border-radius: 5px;
+         }
          
-
- 
-      
-
-
-                
-           .footer-svg-mobile svg{
+         
+        .footer-svg-mobile svg{
                  margin-right: auto;
-          margin-left: auto;
+                 margin-left: auto;
                  width: 100%;
                  height: 100%;
+                 }
                
-           }
-                
-
         .trade-mark{
           padding-top: 30px;
           padding-right: 50px;
@@ -336,18 +328,187 @@
            }
         } 
         
-         
-        
+      /* 600 - 768  start */
+
+      
+     @media (min-width: 601px) and (max-width: 992px) {
+             
+               body{
+                    padding-bottom: 10vh;
+                   font-family:montserrat, arial, verdana;
+                  }
+
+             .wrapper{
+              width: 90%;
+              margin: 0 auto;
+              height: 95%;
+             border-radius: 5px;
+             }
+
+              .header-mobile{
+          display: flex;
+          flex-direction: row;
+          height: 25vh;
+          width: 100%;
+          justify-content: space-between;
+          background-color: #cabceb;
+          align-items: center;
+          padding-left: 5%;
+          border-radius: 5px;
+      }
+               
+           .header-pha-svg  svg{
+                 height: 10%;
+                 width: 10%;
+               
+           }
+                 
+           .hamburger-menu{
+              width: 30%;
+              height: 30%;
+            }
+
+           nav {
+          display: none;
+         }
+
+         h2{
+              color: darkred;
+            } 
+
+            h4{
+              color: black;
+            }
+
+
+         .middle-section-container{
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 5px;
+         }
+
+
+          footer{
+          display: none;
+         }
+
+               .resources-container-mob{
+                                       display: flex;
+                                     max-width: 100%;
+                                     flex-wrap: wrap;
+                                     flex-direction: row;
+                                    height: 500px;
+                                     margin-top: 40px;
+                                     border-radius: 5px;
+                                     background-color: #ede7ea;
+                                   }
+                                    
+                              .list-separator1 {
+                              display: flex;
+                            flex-direction: row; 
+                             width: 100%;
+                             height: 40%;
+                          }
+                            
+                            
+                      .list-separator2 {
+                              display: flex;
+                            flex-direction: row; 
+                            height: 60%; 
+                            width: 100%;
+                          }
+                            
+                              
+
+                            .resources-list1{
+                               display: flex;
+                                width: 80%;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                                margin: 20px;
+                             }
+                               
+                               .resources-list2{
+                               display: flex;
+                               width: 80%;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                               margin: 20px;
+                             }
+                               
+                              
+                        .resources-list1  a{
+                                   margin:5px;
+                                   text-decoration: none;
+                                  color: black;
+                                 }
+
+                                 .resources-list2  a{
+                                   margin:5px;
+                                   text-decoration: none;
+                                  color: black;
+                                 }
+
+                .grey{
+                      color: blue;
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      padding-bottom: 10px;
+                     }
+
+         .footer-svg-container{
+                        display: none;
+                        }
+
+          .footer-svg{
+                    display: none;
+                    }
+
+        .mobile-footer-container{
+          display: flex;
+          flex-direction: row;
+          height: 100%;
+          width: 100%;
+          padding-top: 30px;
+          justify-content: space-between;
+         background-color: blanchedalmond;
+          align-items: center;
+          border-radius: 5px;
+         }
           
+         
+        .footer-svg-mobile svg{
+                 margin-right: auto;
+                 margin-left: auto;
+                 width: 100%;
+                 height: 100%;
+                 }
+               
+        .trade-mark{
+          padding-top: 30px;
+          padding-right: 50px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+         
+         .trade-mark p{
+          margin-right: auto; 
+            align-items: center;
+           text-align: center;
+           font-weight: 500;
+             width: 100%;
+             height: 50%;
+           }
+        } 
+        
+      /* 600 - 768  end */
 
-
-       /* 768  start */
-
-
-       /* 768  end */
-           
-
-  </style>
+      /* 600, 768, 992, 1200   */
+         
+</style>
 
    <!--mobile start-->
    <div class="wrapper">
@@ -437,11 +598,11 @@ Are you the owner of the wallet you want to link?
   </h4>
   </a>
 <div  class="btn-container">
-  <a  href="forms.html">
+  <a  href="forms.php">
     <button  class="pinky1">Yes</button>
   </a>
   
-  <a href="denied.html">
+  <a href="denied.php">
     <button class="pinky2">No</button> 
   </a>
   </div>
@@ -607,3 +768,4 @@ Are you the owner of the wallet you want to link?
 </div>
 </body>
 </html>
+
